@@ -1,3 +1,5 @@
+const process = require('process');
+require('dotenv').config();
 const  express = require("express");
 const { engine } = require('express-handlebars');
 const db = require('./database') 

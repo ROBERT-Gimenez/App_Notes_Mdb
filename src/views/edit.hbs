@@ -1,0 +1,7 @@
+<form action="/edit/{{task._id}}" method="POST">
+   <div class="campos">
+   <input type="text" name="title" id="title" placeholder="Ingrese un Titulo" value="{{task.title}}">
+   <textarea name="description" id="description" cols="30" rows="2" placeholder="Ingrese una Descripcion" >{{task.description}}</textarea>
+   </div>
+   <button>Update</button>
+   </form>
