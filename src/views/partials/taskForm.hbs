@@ -1,7 +1,10 @@
-<form action="/tasks/add" method="POST">
+<div class="card card-body p-4 rounded-0 bg-dark text-white mt-3">
+   <h3>Add new Task</h3>
+   <form action="/tasks/add" method="POST">
    <div class="campos">
-   <input type="text" name="title" id="title" placeholder="Ingrese un Titulo">
-   <textarea name="description" id="description" cols="30" rows="2" placeholder="Ingrese una Descripcion"></textarea>
+   <input class="form-control rounded-0 bg-dark text-white" type="text" name="title" id="title" placeholder="Ingrese un Titulo">
+   <textarea class="form-control rounded-0 bg-dark text-white mt-2" name="description" id="description" cols="30" rows="2" placeholder="Ingrese una Descripcion"></textarea>
    </div>
-   <button>add</button>
+   <button class="btn btn-primary btn-sm mt-2">add</button>
    </form>
+</div>
