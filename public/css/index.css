@@ -1,0 +1,22 @@
+.btns{
+    display: flex;
+    justify-content:space-between;
+}
+a.btn{
+    width:32%;
+}
+@media (max-width: 900px){
+    a.btn {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 400px){
+    a.btn{
+        font-size: 0.5rem;
+    }
+    div.col-md-7{
+        font-size: xx-small;
+    }
+}

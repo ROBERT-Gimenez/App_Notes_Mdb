@@ -1,3 +1,4 @@
+ 
  {{#if tasks}}
  <table class="table table-bordered table-hover table-dark mt-3">
     <thead>
@@ -6,6 +7,7 @@
             <th>Title</th>
             <th>Descripcion</th>
             <th>Operation</th>
+           
         </tr>
     </thead>
     <tbody>
@@ -14,14 +16,14 @@
                 <td>{{@index}}</td>  
                 <td>{{title}}</td>  
                 <td> {{description}}</td>      
-                <td>
+                <td class="btns">
                     {{#if done}}
                     <a href="/toggleDone/{{_id}}" class="btn btn-dark">Undone</a>
                     {{else}}
                     <a href="/toggleDone/{{_id}}" class="btn btn-success">Done</a>
                     {{/if}}
                     <a href="/edit/{{_id}}" class="btn btn-primary">edit</a>
-                    <a href="/delete/{{_id}}" class="btn btn-danger">Delete</a>
+                    <a href="/delete/{{_id}}" class="btn btn-danger">Delete</a>                    
                 </td>
             </tr>
         {{/each}}

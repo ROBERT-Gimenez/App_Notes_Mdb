@@ -25,6 +25,7 @@ app.set("view engine" , ".hbs");
 
 /* middlewares */
 app.use(morgan('dev'));//imprime por consola las peticiones de url
+app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended : false}));//
 
 /* routes */
